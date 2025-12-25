@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EduTech Pro Practice Labs - Master coding through hands-on practice with real-time feedback, interactive challenges, and collaborative projects">
+    <title>Practice Labs - EduTech Pro | Learn by Doing</title>
+    <link rel="stylesheet" href="../css/main.css">
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fedutechpr4555back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.10"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-surface">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-card sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="homepage.html" class="flex items-center space-x-3">
+                        <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="#1E3A8A"/>
+                            <path d="M12 28V12L20 16L28 12V28L20 24L12 28Z" fill="#14B8A6"/>
+                            <circle cx="20" cy="20" r="3" fill="#F59E0B"/>
+                        </svg>
+                        <span class="text-2xl font-bold text-primary">EduTech Pro</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="course_catalog.html" class="text-text-secondary hover:text-primary transition-colors">Courses</a>
+                    <a href="learning_dashboard.html" class="text-text-secondary hover:text-primary transition-colors">Dashboard</a>
+                    <a href="practice_labs.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Practice Labs</a>
+                    <a href="career_center.html" class="text-text-secondary hover:text-primary transition-colors">Career Center</a>
+                    <a href="about.html" class="text-text-secondary hover:text-primary transition-colors">About</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="learning_dashboard.html" class="text-primary hover:text-primary-700 font-medium transition-colors">Sign In</a>
+                    <a href="course_catalog.html" class="btn btn-primary">Start Learning</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-surface transition-colors" aria-label="Toggle mobile menu">
+                    <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="homepage.html" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">Home</a>
+                    <a href="course_catalog.html" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">Courses</a>
+                    <a href="learning_dashboard.html" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">Dashboard</a>
+                    <a href="practice_labs.html" class="text-primary font-semibold px-4 py-2 rounded-lg bg-primary-50">Practice Labs</a>
+                    <a href="career_center.html" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">Career Center</a>
+                    <a href="about.html" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">About</a>
+                    <div class="pt-4 border-t border-border space-y-2">
+                        <a href="learning_dashboard.html" class="block text-center px-4 py-2 text-primary font-medium">Sign In</a>
+                        <a href="course_catalog.html" class="block btn btn-primary w-full">Start Learning</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-900 overflow-hidden py-16 lg:py-24">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="code-pattern" width="60" height="60" patternUnits="userSpaceOnUse">
+                        <path d="M10 10L20 20M20 10L10 20M40 10L50 20M50 10L40 20" stroke="white" stroke-width="2" fill="none"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#code-pattern)"/>
+            </svg>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-white space-y-6 fade-in">
+                <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                    <span class="w-2 h-2 bg-secondary-300 rounded-full animate-pulse"></span>
+                    <span class="text-sm font-medium">500+ Interactive Coding Challenges</span>
+                </div>
+                
+                <h1 class="text-4xl lg:text-6xl font-bold leading-tight">
+                    Master Coding Through <span class="text-secondary-300">Practice</span>
+                </h1>
+                
+                <p class="text-xl text-primary-100 leading-relaxed max-w-3xl mx-auto">
+                    Learn by doing, not just watching. Solve real-world challenges in our interactive coding environment with instant feedback and expert guidance.
+                </p>
+
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 max-w-4xl mx-auto">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                        <div class="text-3xl font-bold text-secondary-300">500+</div>
+                        <div class="text-sm text-primary-100">Challenges</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                        <div class="text-3xl font-bold text-secondary-300">15+</div>
+                        <div class="text-sm text-primary-100">Languages</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                        <div class="text-3xl font-bold text-secondary-300">50K+</div>
+                        <div class="text-sm text-primary-100">Solutions</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                        <div class="text-3xl font-bold text-secondary-300">24/7</div>
+                        <div class="text-sm text-primary-100">Access</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter & Search Section -->
+    <section class="bg-white border-b border-border sticky top-20 z-40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+                <!-- Search Bar -->
+                <div class="relative flex-1 w-full md:max-w-md">
+                    <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                    <input type="text" placeholder="Search challenges..." class="input pl-10" id="search-input">
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap gap-3 items-center">
+                    <button class="btn btn-ghost text-sm" id="filter-btn">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+                        </svg>
+                        Filters
+                    </button>
+                    <button class="btn btn-ghost text-sm" id="reset-btn">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                        Reset
+                    </button>
+                    <select class="input py-2 text-sm" id="difficulty-filter">
+                        <option value="">All Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                    <select class="input py-2 text-sm" id="language-filter">
+                        <option value="">All Languages</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="cpp">C++</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Challenge Section -->
+    <section class="py-12 bg-gradient-to-br from-secondary-50 to-primary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <span class="badge badge-secondary text-base mb-2">Challenge of the Day</span>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-primary">Today's Featured Challenge</h2>
+                </div>
+                <span class="text-sm text-text-secondary">Resets in 8h 24m</span>
+            </div>
+
+            <div class="card-elevated overflow-hidden">
+                <div class="grid lg:grid-cols-2 gap-0">
+                    <!-- Challenge Info -->
+                    <div class="p-8 bg-white">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <span class="badge badge-warning">Intermediate</span>
+                            <span class="badge badge-primary">JavaScript</span>
+                            <div class="flex items-center space-x-1 text-accent">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm font-medium">50 points</span>
+                            </div>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-primary mb-4">Binary Search Tree Validator</h3>
+                        <p class="text-text-secondary mb-6 leading-relaxed">
+                            Write a function to determine if a binary tree is a valid binary search tree. A valid BST is defined as follows: The left subtree of a node contains only nodes with keys less than the node's key. The right subtree of a node contains only nodes with keys greater than the node's key. Both the left and right subtrees must also be binary search trees.
+                        </p>
+
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-success flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <p class="font-medium text-primary">Learning Objectives</p>
+                                    <p class="text-sm text-text-secondary">Tree traversal, recursion, data structure validation</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <p class="font-medium text-primary">Time Estimate</p>
+                                    <p class="text-sm text-text-secondary">30-45 minutes</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                                </svg>
+                                <div>
+                                    <p class="font-medium text-primary">Completed By</p>
+                                    <p class="text-sm text-text-secondary">2,847 students</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-secondary w-full">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                            </svg>
+                            Start Challenge
+                        </button>
+                    </div>
+
+                    <!-- Code Preview -->
+                    <div class="bg-gray-900 p-8 flex flex-col">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm font-medium text-gray-400">Solution Template</span>
+                            <div class="flex items-center space-x-2">
+                                <button class="text-gray-400 hover:text-white transition-colors" aria-label="Copy code">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex-1 overflow-auto">
+                            <pre class="text-sm font-mono"><code class="text-green-400">/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+
+<span class="text-blue-400">function</span> <span class="text-yellow-400">isValidBST</span>(<span class="text-orange-400">root</span>) {
+    <span class="text-gray-500">// Your code here</span>
+    <span class="text-purple-400">return</span> <span class="text-blue-300">true</span>;
+}
+
+<span class="text-gray-500">// Test cases</span>
+<span class="text-blue-400">const</span> tree1 = <span class="text-blue-400">new</span> <span class="text-yellow-400">TreeNode</span>(<span class="text-orange-400">2</span>);
+tree1.left = <span class="text-blue-400">new</span> <span class="text-yellow-400">TreeNode</span>(<span class="text-orange-400">1</span>);
+tree1.right = <span class="text-blue-400">new</span> <span class="text-yellow-400">TreeNode</span>(<span class="text-orange-400">3</span>);
+
+console.<span class="text-yellow-400">log</span>(<span class="text-yellow-400">isValidBST</span>(tree1)); <span class="text-gray-500">// true</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenge Categories -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Browse by Category</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Choose your learning path and start solving challenges tailored to your goals
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Category Card 1 -->
+                <div class="card-elevated p-6 hover:shadow-floating transition-all cursor-pointer group">
+                    <div class="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary group-hover:scale-110 transition-all">
+                        <svg class="w-7 h-7 text-primary group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors">Data Structures</h3>
+                    <p class="text-text-secondary mb-4">Master arrays, linked lists, trees, graphs, and hash tables</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-border">
+                        <span class="text-sm text-text-secondary">127 challenges</span>
+                        <svg class="w-5 h-5 text-secondary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Category Card 2 -->
+                <div class="card-elevated p-6 hover:shadow-floating transition-all cursor-pointer group">
+                    <div class="w-14 h-14 bg-secondary-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-secondary group-hover:scale-110 transition-all">
+                        <svg class="w-7 h-7 text-secondary group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors">Algorithms</h3>
+                    <p class="text-text-secondary mb-4">Practice sorting, searching, dynamic programming, and more</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-border">
+                        <span class="text-sm text-text-secondary">156 challenges</span>
+                        <svg class="w-5 h-5 text-secondary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Category Card 3 -->
+                <div class="card-elevated p-6 hover:shadow-floating transition-all cursor-pointer group">
+                    <div class="w-14 h-14 bg-accent-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-accent group-hover:scale-110 transition-all">
+                        <svg class="w-7 h-7 text-accent group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors">Web Development</h3>
+                    <p class="text-text-secondary mb-4">Build real-world projects with HTML, CSS, and JavaScript</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-border">
+                        <span class="text-sm text-text-secondary">89 challenges</span>
+                        <svg class="w-5 h-5 text-secondary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Category Card 4 -->
+                <div class="card-elevated p-6 hover:shadow-floating transition-all cursor-pointer group">
+                    <div class="w-14 h-14 bg-success-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-success group-hover:scale-110 transition-all">
+                        <svg class="w-7 h-7 text-success group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors">Database & SQL</h3>
+                    <p class="text-text-secondary mb-4">Query optimization, schema design, and data modeling</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-border">
+                        <span class="text-sm text-text-secondary">64 challenges</span>
+                        <svg class="w-5 h-5 text-secondary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Category Card 5 -->
+                <div class="card-elevated p-6 hover:shadow-floating transition-all cursor-pointer group">
+                    <div class="w-14 h-14 bg-warning-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-warning group-hover:scale-110 transition-all">
+                        <svg class="w-7 h-7 text-warning group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors">System Design</h3>
+                    <p class="text-text-secondary mb-4">Scalability, architecture patterns, and distributed systems</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-border">
+                        <span class="text-sm text-text-secondary">42 challenges</span>
+                        <svg class="w-5 h-5 text-secondary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Category Card 6 -->
+                <div class="card-elevated p-6 hover:shadow-floating transition-all cursor-pointer group">
+                    <div class="w-14 h-14 bg-error-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-error group-hover:scale-110 transition-all">
+                        <svg class="w-7 h-7 text-error group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors">Machine Learning</h3>
+                    <p class="text-text-secondary mb-4">Implement ML algorithms and work with real datasets</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-border">
+                        <span class="text-sm text-text-secondary">38 challenges</span>
+                        <svg class="w-5 h-5 text-secondary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive IDE Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="badge badge-primary text-base mb-4">Live Coding Environment</span>
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Code, Test, and Deploy in Real-Time</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Our browser-based IDE supports 15+ programming languages with instant feedback
+                </p>
+            </div>
+
+            <div class="card-elevated overflow-hidden">
+                <!-- IDE Header -->
+                <div class="bg-gray-800 px-6 py-3 flex items-center justify-between border-b border-gray-700">
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <span class="text-sm text-gray-400 font-mono">solution.js</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <select class="bg-gray-700 text-white text-sm px-3 py-1 rounded border border-gray-600 focus:outline-none focus:ring-2 focus:ring-secondary">
+                            <option>JavaScript</option>
+                            <option>Python</option>
+                            <option>Java</option>
+                            <option>C++</option>
+                            <option>TypeScript</option>
+                        </select>
+                        <button class="text-gray-400 hover:text-white transition-colors" aria-label="Settings">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-0">
+                    <!-- Code Editor -->
+                    <div class="bg-gray-900 p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm font-medium text-gray-400">Code Editor</span>
+                            <button class="text-gray-400 hover:text-white transition-colors text-sm flex items-center space-x-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>
+                                </svg>
+                                <span>Fullscreen</span>
+                            </button>
+                        </div>
+                        <div class="bg-gray-950 rounded-lg p-4 h-96 overflow-auto">
+                            <pre class="text-sm font-mono leading-relaxed"><code><span class="text-gray-500">1</span>  <span class="text-purple-400">function</span> <span class="text-yellow-400">twoSum</span>(<span class="text-orange-400">nums</span>, <span class="text-orange-400">target</span>) {
+<span class="text-gray-500">2</span>      <span class="text-blue-400">const</span> map = <span class="text-blue-400">new</span> <span class="text-yellow-400">Map</span>();
+<span class="text-gray-500">3</span>      
+<span class="text-gray-500">4</span>      <span class="text-purple-400">for</span> (<span class="text-blue-400">let</span> i = <span class="text-orange-400">0</span>; i < nums.length; i++) {
+<span class="text-gray-500">5</span>          <span class="text-blue-400">const</span> complement = target - nums[i];
+<span class="text-gray-500">6</span>          
+<span class="text-gray-500">7</span>          <span class="text-purple-400">if</span> (map.<span class="text-yellow-400">has</span>(complement)) {
+<span class="text-gray-500">8</span>              <span class="text-purple-400">return</span> [map.<span class="text-yellow-400">get</span>(complement), i];
+<span class="text-gray-500">9</span>          }
+<span class="text-gray-500">10</span>         
+<span class="text-gray-500">11</span>         map.<span class="text-yellow-400">set</span>(nums[i], i);
+<span class="text-gray-500">12</span>     }
+<span class="text-gray-500">13</span>     
+<span class="text-gray-500">14</span>     <span class="text-purple-400">return</span> [];
+<span class="text-gray-500">15</span> }
+<span class="text-gray-500">16</span> 
+<span class="text-gray-500">17</span> <span class="text-gray-500">// Test cases</span>
+<span class="text-gray-500">18</span> console.<span class="text-yellow-400">log</span>(<span class="text-yellow-400">twoSum</span>([<span class="text-orange-400">2</span>, <span class="text-orange-400">7</span>, <span class="text-orange-400">11</span>, <span class="text-orange-400">15</span>], <span class="text-orange-400">9</span>));</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Output Console -->
+                    <div class="bg-white p-6 border-l border-border">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-3">
+                                <button class="text-sm font-medium text-primary border-b-2 border-primary pb-1">Console</button>
+                                <button class="text-sm font-medium text-text-secondary hover:text-primary transition-colors">Test Results</button>
+                            </div>
+                            <button class="btn btn-secondary text-sm">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                Run Code
+                            </button>
+                        </div>
+                        <div class="bg-surface rounded-lg p-4 h-96 overflow-auto font-mono text-sm">
+                            <div class="space-y-2">
+                                <div class="flex items-start space-x-2">
+                                    <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <p class="text-success font-medium">Test Case 1: Passed</p>
+                                        <p class="text-text-secondary text-xs mt-1">Input: nums = [2,7,11,15], target = 9</p>
+                                        <p class="text-text-secondary text-xs">Output: [0,1]</p>
+                                        <p class="text-text-secondary text-xs">Expected: [0,1]</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-2 pt-3 border-t border-border">
+                                    <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <p class="text-success font-medium">Test Case 2: Passed</p>
+                                        <p class="text-text-secondary text-xs mt-1">Input: nums = [3,2,4], target = 6</p>
+                                        <p class="text-text-secondary text-xs">Output: [1,2]</p>
+                                        <p class="text-text-secondary text-xs">Expected: [1,2]</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-2 pt-3 border-t border-border">
+                                    <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <p class="text-success font-medium">Test Case 3: Passed</p>
+                                        <p class="text-text-secondary text-xs mt-1">Input: nums = [3,3], target = 6</p>
+                                        <p class="text-text-secondary text-xs">Output: [0,1]</p>
+                                        <p class="text-text-secondary text-xs">Expected: [0,1]</p>
+                                    </div>
+                                </div>
+                                <div class="mt-4 p-3 bg-success-50 rounded-lg border border-success-200">
+                                    <p class="text-success font-medium text-sm">✓ All test cases passed!</p>
+                                    <p class="text-success-700 text-xs mt-1">Runtime: 68ms | Memory: 42.3MB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IDE Footer -->
+                <div class="bg-gray-50 px-6 py-3 flex items-center justify-between border-t border-border">
+                    <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                        <span>Line 18, Col 32</span>
+                        <span>•</span>
+                        <span>UTF-8</span>
+                        <span>•</span>
+                        <span>Spaces: 2</span>
+                    </div>
+                    <button class="btn btn-primary text-sm">
+                        Submit Solution
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Challenges -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between mb-12">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-2">Popular Challenges</h2>
+                    <p class="text-text-secondary">Most solved challenges this week</p>
+                </div>
+                <a href="javascript:void(0)" class="btn btn-outline">
+                    View All
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Challenge Item 1 -->
+                <div class="card p-6 hover:shadow-elevated transition-shadow cursor-pointer">
+                    <div class="flex items-start justify-between gap-6">
+                        <div class="flex-1">
+                            <div class="flex items-center space-x-3 mb-3">
+                                <span class="badge badge-success">Beginner</span>
+                                <span class="badge badge-primary">JavaScript</span>
+                                <div class="flex items-center space-x-1 text-accent">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <span class="text-sm font-medium">20 pts</span>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-2">Reverse a String</h3>
+                            <p class="text-text-secondary mb-3">Write a function that reverses a string. The input string is given as an array of characters.</p>
+                            <div class="flex items-center space-x-6 text-sm text-text-secondary">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>10-15 min</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                                    </svg>
+                                    <span>8,234 solved</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-success">94% success rate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary flex-shrink-0">
+                            Start
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Challenge Item 2 -->
+                <div class="card p-6 hover:shadow-elevated transition-shadow cursor-pointer">
+                    <div class="flex items-start justify-between gap-6">
+                        <div class="flex-1">
+                            <div class="flex items-center space-x-3 mb-3">
+                                <span class="badge badge-warning">Intermediate</span>
+                                <span class="badge badge-secondary">Python</span>
+                                <div class="flex items-center space-x-1 text-accent">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <span class="text-sm font-medium">35 pts</span>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-2">Longest Substring Without Repeating Characters</h3>
+                            <p class="text-text-secondary mb-3">Given a string, find the length of the longest substring without repeating characters.</p>
+                            <div class="flex items-center space-x-6 text-sm text-text-secondary">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>20-30 min</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                                    </svg>
+                                    <span>5,678 solved</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-warning-700">76% success rate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary flex-shrink-0">
+                            Start
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Challenge Item 3 -->
+                <div class="card p-6 hover:shadow-elevated transition-shadow cursor-pointer">
+                    <div class="flex items-start justify-between gap-6">
+                        <div class="flex-1">
+                            <div class="flex items-center space-x-3 mb-3">
+                                <span class="badge badge-error">Advanced</span>
+                                <span class="badge badge-primary">Java</span>
+                                <div class="flex items-center space-x-1 text-accent">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <span class="text-sm font-medium">60 pts</span>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-2">Median of Two Sorted Arrays</h3>
+                            <p class="text-text-secondary mb-3">Given two sorted arrays, find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).</p>
+                            <div class="flex items-center space-x-6 text-sm text-text-secondary">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>45-60 min</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                                    </svg>
+                                    <span>2,145 solved</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-error" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-error">42% success rate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary flex-shrink-0">
+                            Start
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Projects Gallery -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="badge badge-accent text-base mb-4">Community Showcase</span>
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Student Project Gallery</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    See what our community is building and get inspired for your next project
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project Card 1 -->
+                <div class="card-elevated overflow-hidden group cursor-pointer">
+                    <div class="relative h-48 overflow-hidden bg-gradient-to-br from-primary-100 to-secondary-100">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_122daf91b-1764676753294.png" 
+                             alt="Real-time analytics dashboard project showing data visualization with charts and graphs" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             loading="lazy"
+                             onerror="this.src='https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="absolute top-4 right-4 flex items-center space-x-2">
+                            <span class="badge bg-white text-primary">Featured</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1ae0f3431-1763296290027.png" 
+                                 alt="Profile photo of Alex Martinez, project creator" 
+                                 class="w-10 h-10 rounded-full object-cover"
+                                 loading="lazy"
+                                 onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;">
+                            <div>
+                                <p class="font-semibold text-primary">Alex Martinez</p>
+                                <p class="text-xs text-text-secondary">Full Stack Developer</p>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-bold text-primary mb-2 group-hover:text-secondary transition-colors">Real-Time Analytics Dashboard</h3>
+                        <p class="text-sm text-text-secondary mb-4">Interactive dashboard built with React and D3.js for visualizing real-time data streams</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <span>234</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                    </svg>
+                                    <span>1.2k</span>
+                                </div>
+                            </div>
+                            <button class="text-secondary hover:text-secondary-700 font-medium text-sm">View Project →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="card-elevated overflow-hidden group cursor-pointer">
+                    <div class="relative h-48 overflow-hidden bg-gradient-to-br from-secondary-100 to-accent-100">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_19b8ea74d-1764642187846.png" 
+                             alt="E-commerce platform project featuring modern shopping interface with product listings" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             loading="lazy"
+                             onerror="this.src='https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <img src="https://img.rocket.new/generatedImages/rocket_gen_img_19af92e62-1763300446296.png" 
+                                 alt="Profile photo of Sarah Chen, project creator" 
+                                 class="w-10 h-10 rounded-full object-cover"
+                                 loading="lazy"
+                                 onerror="this.src='https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;">
+                            <div>
+                                <p class="font-semibold text-primary">Sarah Chen</p>
+                                <p class="text-xs text-text-secondary">Frontend Developer</p>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-bold text-primary mb-2 group-hover:text-secondary transition-colors">E-Commerce Platform</h3>
+                        <p class="text-sm text-text-secondary mb-4">Full-featured online store with cart, checkout, and payment integration using Next.js</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <span>189</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                    </svg>
+                                    <span>856</span>
+                                </div>
+                            </div>
+                            <button class="text-secondary hover:text-secondary-700 font-medium text-sm">View Project →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="card-elevated overflow-hidden group cursor-pointer">
+                    <div class="relative h-48 overflow-hidden bg-gradient-to-br from-accent-100 to-primary-100">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1c29d13b2-1764639853707.png" 
+                             alt="Mobile fitness tracking app project showing workout interface and progress tracking" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             loading="lazy"
+                             onerror="this.src='https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <img src="https://img.rocket.new/generatedImages/rocket_gen_img_195a56a22-1763296537088.png" 
+                                 alt="Profile photo of Marcus Johnson, project creator" 
+                                 class="w-10 h-10 rounded-full object-cover"
+                                 loading="lazy"
+                                 onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;">
+                            <div>
+                                <p class="font-semibold text-primary">Marcus Johnson</p>
+                                <p class="text-xs text-text-secondary">Mobile Developer</p>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-bold text-primary mb-2 group-hover:text-secondary transition-colors">Fitness Tracking App</h3>
+                        <p class="text-sm text-text-secondary mb-4">Cross-platform mobile app for workout tracking and health monitoring with React Native</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-border">
+                            <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <span>312</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                    </svg>
+                                    <span>1.5k</span>
+                                </div>
+                            </div>
+                            <button class="text-secondary hover:text-secondary-700 font-medium text-sm">View Project →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="javascript:void(0)" class="btn btn-primary">
+                    Explore More Projects
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-primary to-secondary relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="cta-code" width="80" height="80" patternUnits="userSpaceOnUse">
+                        <text x="10" y="20" font-family="monospace" font-size="12" fill="white" opacity="0.5">&lt;/&gt;</text>
+                        <text x="40" y="50" font-family="monospace" font-size="12" fill="white" opacity="0.5">{}</text>
+                        <text x="10" y="70" font-family="monospace" font-size="12" fill="white" opacity="0.5">[]</text>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#cta-code)"/>
+            </svg>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">Ready to Start Coding?</h2>
+            <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+                Join thousands of developers improving their skills every day. Start solving challenges and building your portfolio today.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="course_catalog.html" class="btn bg-white text-primary hover:bg-primary-50 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                    Start Free Trial
+                </a>
+                <a href="learning_dashboard.html" class="btn bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 hover:bg-white/20">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>
+                    </svg>
+                    Sign In
+                </a>
+            </div>
+
+            <div class="mt-12 flex flex-wrap justify-center gap-8 text-white">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-6 h-6 text-secondary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span>Free forever plan</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-6 h-6 text-secondary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span>No credit card required</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-6 h-6 text-secondary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span>Cancel anytime</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <svg class="w-8 h-8" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="#1E3A8A"/>
+                            <path d="M12 28V12L20 16L28 12V28L20 24L12 28Z" fill="#14B8A6"/>
+                            <circle cx="20" cy="20" r="3" fill="#F59E0B"/>
+                        </svg>
+                        <span class="text-xl font-bold text-white">EduTech Pro</span>
+                    </div>
+                    <p class="text-sm mb-4">Transforming potential into expertise through hands-on learning and real-world projects.</p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="hover:text-secondary transition-colors" aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="hover:text-secondary transition-colors" aria-label="Twitter">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="hover:text-secondary transition-colors" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="hover:text-secondary transition-colors" aria-label="YouTube">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="course_catalog.html" class="hover:text-secondary transition-colors">All Courses</a></li>
+                        <li><a href="learning_dashboard.html" class="hover:text-secondary transition-colors">Student Dashboard</a></li>
+                        <li><a href="practice_labs.html" class="hover:text-secondary transition-colors">Practice Labs</a></li>
+                        <li><a href="career_center.html" class="hover:text-secondary transition-colors">Career Services</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors">FAQs</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors">Community Forum</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors">Technical Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Stay Updated</h4>
+                    <p class="text-sm mb-4">Get the latest courses, tips, and career advice delivered to your inbox.</p>
+                    <form class="space-y-2">
+                        <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-secondary">
+                        <button type="submit" class="w-full btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400">© 2025 EduTech Pro. All Rights Reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-sm hover:text-secondary transition-colors">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="text-sm hover:text-secondary transition-colors">Terms of Service</a>
+                    <a href="javascript:void(0)" class="text-sm hover:text-secondary transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Search functionality
+        const searchInput = document.getElementById('search-input');
+        searchInput.addEventListener('input', (e) => {
+            console.log('Searching for:', e.target.value);
+            // Implement search logic here
+        });
+
+        // Filter functionality
+        const difficultyFilter = document.getElementById('difficulty-filter');
+        const languageFilter = document.getElementById('language-filter');
+        const resetBtn = document.getElementById('reset-btn');
+
+        difficultyFilter.addEventListener('change', (e) => {
+            console.log('Filter by difficulty:', e.target.value);
+            // Implement filter logic here
+        });
+
+        languageFilter.addEventListener('change', (e) => {
+            console.log('Filter by language:', e.target.value);
+            // Implement filter logic here
+        });
+
+        resetBtn.addEventListener('click', () => {
+            searchInput.value = '';
+            difficultyFilter.value = '';
+            languageFilter.value = '';
+            console.log('Filters reset');
+            // Implement reset logic here
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
