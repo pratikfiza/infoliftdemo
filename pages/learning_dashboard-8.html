@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EduTech Pro Learning Dashboard - Track your progress, manage assignments, and engage with peers in your personalized learning environment">
+    <title>Learning Dashboard - EduTech Pro</title>
+    <link rel="stylesheet" href="../css/main.css">
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fedutechpr4555back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.10"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+
+  
+  </head>
+<body class="bg-surface">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-card sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-19">
+                <!-- Logo -->
+                <!-- <div class="flex items-center">
+                    <a href="homepage.html" class="flex items-center space-x-3">
+                        <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="#1E3A8A"/>
+                            <path d="M12 28V12L20 16L28 12V28L20 24L12 28Z" fill="#14B8A6"/>
+                            <circle cx="20" cy="20" r="3" fill="#F59E0B"/>
+                        </svg>
+                        <span class="text-2xl font-bold text-primary">EduTech Pro</span>
+                    </a>
+                </div> -->
+                <!-- <div class="flex items-center">
+    <a href="homepage.html" class="flex items-center space-x-3">
+        <img src="infolift_logo_400.svg" alt="Infolift Logo" class="w-10 h-10 object-contain" />
+        
+            </a>
+            </div> -->
+            <div class="flex items-center">
+    <a href="homepage.html" class="flex items-center">
+        <img src="infolift_logo_400.svg" alt="Infolift Logo" class="w-20 h-20 object-contain" />
+    </a>
+</div>
+
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Home</a>
+                    <a href="course_catalog.html" class="text-text-secondary hover:text-primary transition-colors">Courses</a>
+                    <a href="https://www.programiz.com/python-programming/online-compiler/" class="text-text-secondary hover:text-primary transition-colors"target="_blank" rel="noopener noreferrer">Practice Labs</a>
+                    <a href="career_center.html" class="text-text-secondary hover:text-primary transition-colors">Career Center</a>
+                    <a href="about.html" class="text-text-secondary hover:text-primary transition-colors">About Us</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="course_catalog.html" class="btn btn-primary">Start Learning</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-surface transition-colors" aria-label="Toggle mobile menu">
+                    <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="homepage.html" class="text-primary font-semibold px-4 py-2 rounded-lg bg-primary-50">Home</a>
+                    <a href="course_catalog.html" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">Courses</a>
+                    <a href="learning_dashboard.html" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">Dashboard</a>
+                    <a href="https://www.programiz.com/python-programming/online-compiler/" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">Practice Labs</a>
+                    <a href="career_center.html" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">Career Center</a>
+                    <a href="about.html" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">About</a>
+                    <div class="pt-4 border-t border-border space-y-2">
+                        <a href="learning_dashboard.html" class="block text-center px-4 py-2 text-primary font-medium">Sign In</a>
+                        <a href="course_catalog.html" class="block btn btn-primary w-full">Start Learning</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Dashboard Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Welcome Section with Quick Stats -->
+        <section class="mb-8">
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 mb-6">
+                <div>
+                    <h1 class="text-3xl lg:text-4xl font-bold text-primary mb-2">Module Details 👋</h1>
+                    <p class="text-text-secondary">You're making great progress. Keep up the momentum!</p>
+                </div>
+                <!-- <div class="flex items-center space-x-3">
+                    <span class="badge badge-warning flex items-center space-x-2">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <span>7-day streak</span>
+                    </span>
+                    <button class="btn btn-primary">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                        </svg>
+                        New Course
+                    </button>
+                </div> -->
+            </div>
+
+            <!-- Quick Stats Grid -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="card p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <!-- <span class="text-xs text-success font-medium">+2 this week</span> -->
+                    </div>
+                    <p class="text-2xl font-bold text-primary">16</p>
+                    <p class="text-sm text-text-secondary">Modules</p>
+                </div>
+
+                <div class="card p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <!-- <span class="text-xs text-success font-medium">+12 today</span> -->
+                    </div>
+                    <p class="text-2xl font-bold text-primary">100%</p>
+                    <p class="text-sm text-text-secondary">Live Sessions</p>
+                </div>
+
+                <div class="card p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <!-- <span class="text-xs text-text-secondary">This week</span> -->
+                    </div>
+                    <p class="text-2xl font-bold text-primary">2 Months</p>
+                    <p class="text-sm text-text-secondary">Learning Time</p>
+                </div>
+
+                <div class="card p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                            </svg>
+                        </div>
+                        <span class="text-xs text-success font-medium">+10 new</span>
+                    </div>
+                    <p class="text-2xl font-bold text-primary">100+</p>
+                    <p class="text-sm text-text-secondary">Placed</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Grid -->
+        <div class="grid lg:grid-cols-3 gap-8">
+            <!-- Left Column - Main Content -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- Current Courses Section -->
+                <section>
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-2xl font-bold text-primary">Contents</h2>
+                        <a href="course_catalog.html" class="text-secondary hover:text-secondary-700 font-medium text-sm">
+                            Browse All Courses →
+                        </a>
+                    </div>
+
+                   
+                </section>
+
+                <!-- Upcoming Assignments Section -->
+                <section>
+                    <div class="flex items-center justify-between mb-6">
+                       
+                    </div>
+
+<div class="space-y-2">
+
+    <!-- Module 1 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 1: Introduction to Business Communication
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Importance of Communication in Business<br>
+            Types of Business Communication<br>
+            Communication Process & Barriers<br>
+            Principles of Effective Communication<br>
+        </div>
+    </div>
+
+    <!-- Module 2 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 2: Verbal Communication Skills
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Professional Speaking Skills<br>
+            Tone, Clarity & Confidence<br>
+            Meetings & Discussions<br>
+            Telephone & Video Call Etiquette<br>
+        </div>
+    </div>
+
+    <!-- Module 3 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 3: Written Business Communication
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Business Emails & Email Etiquette<br>
+            Reports & Proposals<br>
+            Memos, Notices & Business Letters<br>
+            Professional Writing Style & Grammar<br>
+        </div>
+    </div>
+
+    <!-- Module 4 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 4: Non-Verbal Communication
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Body Language & Gestures<br>
+            Facial Expressions & Eye Contact<br>
+            Professional Appearance<br>
+            Cultural Awareness in Communication<br>
+        </div>
+    </div>
+
+    <!-- Module 5 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 5: Presentation & Public Speaking Skills
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Presentation Structure & Storytelling<br>
+            Slide Design Best Practices<br>
+            Public Speaking Techniques<br>
+            Handling Questions & Feedback<br>
+        </div>
+    </div>
+
+    <!-- Module 6 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 6: Corporate Communication
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Internal vs External Communication<br>
+            Corporate Messaging & Branding<br>
+            Crisis Communication Basics<br>
+            Media Communication Overview<br>
+        </div>
+    </div>
+
+    <!-- Module 7 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 7: Interpersonal & Team Communication
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Communication in Teams<br>
+            Collaboration & Feedback<br>
+            Conflict Resolution Techniques<br>
+            Emotional Intelligence in Communication<br>
+        </div>
+    </div>
+
+    <!-- Module 8 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 8: Stakeholder & Client Communication
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Client Interaction Skills<br>
+            Negotiation Basics<br>
+            Managing Expectations<br>
+            Professional Relationship Building<br>
+        </div>
+    </div>
+
+    <!-- Module 9 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 9: Digital & Workplace Communication
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Communication via Chat Tools & Collaboration Platforms<br>
+            Remote & Hybrid Workplace Communication<br>
+            Professional Social Media Usage<br>
+        </div>
+    </div>
+
+    <!-- Module 10 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 10: Ethics & Professional Etiquette
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Business Communication Ethics<br>
+            Confidentiality & Compliance<br>
+            Cross-Cultural Communication<br>
+        </div>
+    </div>
+
+    <!-- Module 11 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 11: Practical Exercises & Role Plays
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Mock Meetings & Presentations<br>
+            Email & Report Writing Practice<br>
+            Communication Case Studies<br>
+        </div>
+    </div>
+
+    <!-- Module 12 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 12: Career Readiness & Professional Growth
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Communication for Interviews<br>
+            Resume & Cover Letter Writing<br>
+            Workplace Communication Best Practices<br>
+            Continuous Skill Development<br>
+        </div>
+    </div>
+
+    <!-- ENROLL SECTION (ONLY ONCE) -->
+    <div class="mt-6 p-4 border rounded-lg bg-background">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-4 text-sm">
+                <span class="flex items-center space-x-1 text-error">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="font-medium">New batch starts in 2 days</span>
+                </span>
+            </div>
+            <span class="badge badge-error">New Batch</span>
+        </div>
+
+        <div class="flex items-center justify-between pt-4 border-t border-border mt-4">
+            <span class="text-sm text-text-secondary">2 Months Learning Time</span>
+            <button class="btn btn-primary text-sm px-4 py-2">Enroll Now</button>
+        </div>
+    </div>
+
+</div>
+
+                </section>
+
+                <!-- Recent Activity Section -->
+             
+            </div>
+
+            <!-- Right Column - Sidebar -->
+            <div class="lg:col-span-1 space-y-6">
+                <!-- Calendar Widget -->
+                <section class="card p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-bold text-primary">Upcoming Events</h3>
+                        <button class="text-text-secondary hover:text-primary transition-colors" aria-label="Calendar options">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"/>
+                            </svg>
+                        </button>
+                    </div>
+
+           <div class="space-y-4">
+    <div class="flex items-start space-x-3 p-3 bg-primary-50 rounded-lg">
+        <div class="text-center flex-shrink-0">
+            <p id="eventMonth" class="text-xs text-primary font-medium">---</p>
+            <p id="eventDay" class="text-2xl font-bold text-primary">--</p>
+        </div>
+        <div class="flex-1 min-w-0">
+             <a href="https://forms.gle/Bnp6KMKtFApNotf19" 
+           target="_blank" 
+           rel="noopener noreferrer">
+            <p class="font-semibold text-primary text-sm mb-1">Free Demo Session</p>
+            <p class="text-xs text-text-secondary mb-1">
+                Introduction to Data Analytics Program
+            </p>
+            <div class="flex items-center space-x-2 text-xs text-text-secondary">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span>6:00 PM - 7:00 PM</span>
+            </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+                    <button class="w-full mt-4 text-center text-sm text-secondary hover:text-secondary-700 font-medium">
+                        View Full Calendar →
+                    </button>
+                </section>
+
+     
+
+                <!-- Achievements Widget -->
+              
+
+                <!-- Quick Actions Widget -->
+                <section class="card p-6">
+                    <h3 class="text-lg font-bold text-primary mb-4">Quick Actions</h3>
+                    <div class="space-y-3">
+                        <a href="practice_labs.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-surface transition-colors">
+                            <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                                </svg>
+                            </div>
+                            <span class="font-medium text-text-primary">Practice Labs</span>
+                        </a>
+                        <a href="javascript:void(0)" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-surface transition-colors">
+                            <div class="w-10 h-10 bg-secondary-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </div>
+                            <span class="font-medium text-text-primary">Study Groups</span>
+                        </a>
+                        <a href="career_center.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-surface transition-colors">
+                            <div class="w-10 h-10 bg-accent-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <span class="font-medium text-text-primary">Career Center</span>
+                        </a>
+                        <a href="javascript:void(0)" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-surface transition-colors">
+                            <div class="w-10 h-10 bg-success-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                </svg>
+                            </div>
+                            <span class="font-medium text-text-primary">Resource Library</span>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Learning Analytics Widget -->
+    
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <!-- <div class="flex items-center space-x-3 mb-4">
+                        <svg class="w-8 h-8" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="#1E3A8A"/>
+                            <path d="M12 28V12L20 16L28 12V28L20 24L12 28Z" fill="#14B8A6"/>
+                            <circle cx="20" cy="20" r="3" fill="#F59E0B"/>
+                        </svg>
+                        <span class="text-xl font-bold text-white">EduTech Pro</span>
+                    </div> -->
+
+          <div class="flex items-center">
+    <a href="homepage.html" class="flex items-center">
+        <img src="infolift_logo_400.svg" alt="Infolift Logo" class="w-20 h-20 object-contain" />
+    </a>
+</div>
+                    
+                    <p class="text-sm mb-4">AN ISO 9001:2008 CERTIFIED ORGANIZATION</p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="hover:text-secondary transition-colors" aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="hover:text-secondary transition-colors" aria-label="Twitter">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="hover:text-secondary transition-colors" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="hover:text-secondary transition-colors" aria-label="YouTube">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="course_catalog.html" class="hover:text-secondary transition-colors">All Courses</a></li>
+                        <li><a href="practice_labs.html" class="hover:text-secondary transition-colors">Practice Labs</a></li>
+                        <li><a href="career_center.html" class="hover:text-secondary transition-colors">Career Services</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors">FAQs</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors">Community Forum</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors">Technical Support/Help Center</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Stay Updated</h4>
+                    <p class="text-sm mb-4">Get the latest courses, tips, and career advice delivered to your inbox.</p>
+                    <form class="space-y-2">
+                        <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-secondary">
+                        <button type="submit" class="w-full btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400">© 2025 Infolift Solution Pvt Ltd. All Rights Reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-sm hover:text-secondary transition-colors">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="text-sm hover:text-secondary transition-colors">Terms of Service</a>
+                    <a href="javascript:void(0)" class="text-sm hover:text-secondary transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+
+  <script>
+    // Accordion toggle
+    const accordions = document.querySelectorAll(".accordion-header");
+    accordions.forEach(header => {
+        header.addEventListener("click", () => {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector(".accordion-icon");
+            content.classList.toggle("hidden");
+            icon.textContent = content.classList.contains("hidden") ? "+" : "-";
+        });
+    });
+</script>
+
+    <script>
+  const futureDate = new Date();
+  futureDate.setDate(futureDate.getDate() + 7);
+
+  const monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+                      "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+
+  document.getElementById("eventMonth").textContent =
+    monthNames[futureDate.getMonth()];
+
+  document.getElementById("eventDay").textContent =
+    futureDate.getDate();
+</script>
+
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
