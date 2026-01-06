@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="../css/main.css">
   <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fedutechpr4555back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.10"></script>
   <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+
+  
   </head>
 <body class="bg-surface">
     <!-- Navigation Header -->
     <header class="bg-white shadow-card sticky top-0 z-50">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
+            <div class="flex justify-between items-center h-19">
                 <!-- Logo -->
-                <div class="flex items-center">
+                <!-- <div class="flex items-center">
                     <a href="homepage.html" class="flex items-center space-x-3">
                         <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="40" height="40" rx="8" fill="#1E3A8A"/>
@@ -24,37 +26,32 @@
                         </svg>
                         <span class="text-2xl font-bold text-primary">EduTech Pro</span>
                     </a>
-                </div>
+                </div> -->
+                <!-- <div class="flex items-center">
+    <a href="homepage.html" class="flex items-center space-x-3">
+        <img src="infolift_logo_400.svg" alt="Infolift Logo" class="w-10 h-10 object-contain" />
+        
+            </a>
+            </div> -->
+            <div class="flex items-center">
+    <a href="homepage.html" class="flex items-center">
+        <img src="infolift_logo_400.svg" alt="Infolift Logo" class="w-20 h-20 object-contain" />
+    </a>
+</div>
+
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="homepage.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Home</a>
                     <a href="course_catalog.html" class="text-text-secondary hover:text-primary transition-colors">Courses</a>
-                    <a href="learning_dashboard.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Dashboard</a>
-                    <a href="practice_labs.html" class="text-text-secondary hover:text-primary transition-colors">Practice Labs</a>
+                    <a href="https://www.programiz.com/python-programming/online-compiler/" class="text-text-secondary hover:text-primary transition-colors"target="_blank" rel="noopener noreferrer">Practice Labs</a>
                     <a href="career_center.html" class="text-text-secondary hover:text-primary transition-colors">Career Center</a>
-                    <a href="about.html" class="text-text-secondary hover:text-primary transition-colors">About</a>
+                    <a href="about.html" class="text-text-secondary hover:text-primary transition-colors">About Us</a>
                 </div>
 
-                <!-- User Profile & Notifications -->
+                <!-- CTA Buttons -->
                 <div class="hidden md:flex items-center space-x-4">
-                    <button class="relative p-2 text-text-secondary hover:text-primary transition-colors" aria-label="Notifications">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
-                        </svg>
-                        <span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full"></span>
-                    </button>
-                    <div class="flex items-center space-x-3 pl-4 border-l border-border">
-                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_10458bf2c-1763293523905.png" 
-                             alt="Profile picture of Sarah Chen, current user" 
-                             class="w-10 h-10 rounded-full object-cover"
-                             loading="eager"
-                             onerror="this.src='https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;">
-                        <div class="hidden lg:block">
-                            <p class="text-sm font-semibold text-text-primary">Sarah Chen</p>
-                            <p class="text-xs text-text-secondary">Level 5 Learner</p>
-                        </div>
-                    </div>
+                    <a href="course_catalog.html" class="btn btn-primary">Start Learning</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -68,12 +65,16 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col space-y-3">
-                    <a href="homepage.html" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">Home</a>
+                    <a href="homepage.html" class="text-primary font-semibold px-4 py-2 rounded-lg bg-primary-50">Home</a>
                     <a href="course_catalog.html" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">Courses</a>
-                    <a href="learning_dashboard.html" class="text-primary font-semibold px-4 py-2 rounded-lg bg-primary-50">Dashboard</a>
-                    <a href="practice_labs.html" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">Practice Labs</a>
+                    <a href="learning_dashboard.html" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">Dashboard</a>
+                    <a href="https://www.programiz.com/python-programming/online-compiler/" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">Practice Labs</a>
                     <a href="career_center.html" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">Career Center</a>
                     <a href="about.html" class="text-text-secondary hover:bg-surface px-4 py-2 rounded-lg transition-colors">About</a>
+                    <div class="pt-4 border-t border-border space-y-2">
+                        <a href="learning_dashboard.html" class="block text-center px-4 py-2 text-primary font-medium">Sign In</a>
+                        <a href="course_catalog.html" class="block btn btn-primary w-full">Start Learning</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -115,7 +116,7 @@
                         </div>
                         <!-- <span class="text-xs text-success font-medium">+2 this week</span> -->
                     </div>
-                    <p class="text-2xl font-bold text-primary">12</p>
+                    <p class="text-2xl font-bold text-primary">16</p>
                     <p class="text-sm text-text-secondary">Modules</p>
                 </div>
 
@@ -182,72 +183,302 @@
                        
                     </div>
 
-                    <div class="space-y-4">
-                        <!-- Assignment Card 1 -->
-                        <div class="card p-6 hover:shadow-elevated transition-shadow">
-                            <div class="flex items-start justify-between mb-4">
-                                <div class="flex items-start space-x-4">
-                                    <div class="w-12 h-12 bg-error-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-6 h-6 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h3 class="font-bold text-primary mb-1">Frontend Development</h3>
-                                        <p class="text-sm text-text-secondary mb-2">HTML5, CSS3 & Responsive Web Design<br>
-JavaScript (ES6+)<br>
-Modern UI development with React.js<br>
-State management, hooks & component-based architecture</p>
-                                        <div class="flex items-center space-x-4 text-sm">
-                                            <span class="flex items-center space-x-1 text-error">
-                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                                </svg>
-                                                <span class="font-medium">Due in 2 days</span>
-                                            </span>
-                                            <span class="text-text-secondary">Dec 7, 2025</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <span class="badge badge-error">High Priority</span>
-                            </div>
-                            <div class="flex items-center justify-between pt-4 border-t border-border">
-                                <span class="text-sm text-text-secondary">Progress: 45%</span>
-                                <button class="btn btn-primary text-sm px-4 py-2">Start Working</button>
-                            </div>
-                        </div>
+                <div class="space-y-2">
 
-                        <!-- Assignment Card 2 -->
-                        <div class="card p-6 hover:shadow-elevated transition-shadow">
-                            <div class="flex items-start justify-between mb-4">
-                                <div class="flex items-start space-x-4">
-                                    <div class="w-12 h-12 bg-warning-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h3 class="font-bold text-primary mb-1">Statistical Analysis Quiz</h3>
-                                        <p class="text-sm text-text-secondary mb-2">Data Science & Machine Learning</p>
-                                        <div class="flex items-center space-x-4 text-sm">
-                                            <span class="flex items-center space-x-1 text-warning">
-                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                                </svg>
-                                                <span class="font-medium">Due in 5 days</span>
-                                            </span>
-                                            <span class="text-text-secondary">Dec 10, 2025</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <span class="badge badge-warning">Medium Priority</span>
-                            </div>
-                            <div class="flex items-center justify-between pt-4 border-t border-border">
-                                <span class="text-sm text-text-secondary">20 questions • 45 min</span>
-                                <button class="btn btn-outline text-sm px-4 py-2">Review Material</button>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Module 1 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 1: Web Development Fundamentals
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            How the Web Works (Client–Server, HTTP/HTTPS)<br>
+            Browsers, DNS, Hosting, Domains<br>
+            Frontend vs Backend vs Full Stack<br>
+            Developer Tools & Code Editors (VS Code)<br>
+            Introduction to Git & GitHub<br>
+            Web Standards & Best Practices<br>
+        </div>
+    </div>
+
+    <!-- Module 2 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 2: HTML5 – Structure of the Web
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            HTML Document Structure<br>
+            Semantic HTML<br>
+            Text, Links, Images, Lists<br>
+            Tables & Forms<br>
+            Input Types & Form Validation<br>
+            Multimedia (Audio, Video, iFrames)<br>
+            Accessibility (ARIA Basics)<br>
+            SEO-Friendly HTML<br>
+            Hands-on Mini Project (Static Website)<br>
+        </div>
+    </div>
+
+    <!-- Module 3 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 3: CSS3 – Styling & Layout
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            CSS Syntax & Selectors<br>
+            Box Model<br>
+            Colors, Fonts, Typography<br>
+            Display, Position, Overflow<br>
+            Flexbox<br>
+            CSS Grid<br>
+            Responsive Design (Media Queries)<br>
+            Animations & Transitions<br>
+            CSS Variables<br>
+            Modern UI Design Practices<br>
+            Tailwind CSS / Bootstrap (Optional)<br>
+            Project: Responsive Landing Page<br>
+        </div>
+    </div>
+
+    <!-- Module 4 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 4: JavaScript Fundamentals
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            JavaScript Basics & Syntax<br>
+            Variables, Data Types<br>
+            Operators & Control Flow<br>
+            Functions & Scope<br>
+            Arrays & Objects<br>
+            Loops & Iterations<br>
+            Error Handling<br>
+            DOM Manipulation<br>
+            Events & Event Handling<br>
+            Project: Interactive Web App<br>
+        </div>
+    </div>
+
+    <!-- Module 5 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 5: Advanced JavaScript
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            ES6+ Features<br>
+            Arrow Functions<br>
+            Destructuring<br>
+            Spread & Rest Operators<br>
+            Promises<br>
+            Async & Await<br>
+            Closures & Callbacks<br>
+            Modules<br>
+            Local Storage & Session Storage<br>
+            Project: Dynamic Dashboard<br>
+        </div>
+    </div>
+
+    <!-- Module 6 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 6: Version Control with Git & GitHub
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Git Basics<br>
+            Repository Management<br>
+            Branching & Merging<br>
+            Pull Requests<br>
+            Conflict Resolution<br>
+            GitHub Collaboration Workflow<br>
+            Open-Source Contribution Basics<br>
+        </div>
+    </div>
+
+    <!-- Module 7 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 7: Frontend Framework – React.js
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            React Fundamentals & JSX<br>
+            Components & Props<br>
+            State & Events<br>
+            Conditional Rendering<br>
+            Lists & Keys<br>
+            React Hooks (useState, useEffect, useContext)<br>
+            Forms & Validation<br>
+            Routing (React Router)<br>
+            API Integration (Axios / Fetch)<br>
+            State Management Basics<br>
+            Project: Single Page Application (SPA)<br>
+        </div>
+    </div>
+
+    <!-- Module 8 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 8: Backend Development with Node.js
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Introduction to Node.js<br>
+            Node Architecture & Event Loop<br>
+            NPM & Package Management<br>
+            File System<br>
+            Environment Variables<br>
+            Project Structure<br>
+            REST API Concepts<br>
+        </div>
+    </div>
+
+    <!-- Module 9 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 9: Express.js – Backend Framework
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Express Setup & Routing<br>
+            Middleware<br>
+            Request & Response Handling<br>
+            Error Handling<br>
+            RESTful APIs<br>
+            Authentication & Authorization<br>
+            JWT & Session Management<br>
+            Role-Based Access Control<br>
+            Project: REST API for Web App<br>
+        </div>
+    </div>
+
+    <!-- Module 10 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 10: Database – MongoDB
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            NoSQL vs SQL<br>
+            MongoDB Basics<br>
+            Collections & Documents<br>
+            CRUD Operations<br>
+            Mongoose ODM<br>
+            Schema Design & Relationships<br>
+            Indexing & Aggregation Framework<br>
+            Project: Database-Driven Application<br>
+        </div>
+    </div>
+
+    <!-- Module 11 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 11: Full Stack Integration
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Connecting React with Node & MongoDB<br>
+            Authentication Flow<br>
+            Protected Routes<br>
+            API Security<br>
+            Environment Configuration<br>
+            Error Handling<br>
+            Performance Optimization<br>
+            Project: Full Stack Application<br>
+        </div>
+    </div>
+
+    <!-- Module 12 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 12: Deployment & DevOps Basics
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Production vs Development Environment<br>
+            Hosting Frontend & Backend<br>
+            MongoDB Atlas<br>
+            Vercel / Netlify / AWS / Render<br>
+            Environment Variables<br>
+            CI/CD Basics<br>
+            Domain & SSL Setup<br>
+        </div>
+    </div>
+
+    <!-- Module 13 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 13: Testing & Debugging
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Debugging Techniques<br>
+            Browser DevTools<br>
+            Unit Testing Basics<br>
+            API Testing (Postman)<br>
+            Error Logging<br>
+            Best Practices<br>
+        </div>
+    </div>
+
+    <!-- Module 14 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 14: Security & Performance
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Web Security Basics<br>
+            CORS<br>
+            XSS & CSRF Protection<br>
+            Password Hashing (bcrypt)<br>
+            API Rate Limiting<br>
+            Performance Optimization<br>
+            Lazy Loading & Code Splitting<br>
+        </div>
+    </div>
+
+    <!-- Module 15 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 15: Real-World Projects (Portfolio)
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Portfolio Website<br>
+            Authentication System<br>
+            E-Commerce Website<br>
+            Admin Dashboard<br>
+            Blog / CMS Platform<br>
+            Real-Time Chat Application (Optional)<br>
+            Capstone Project (End-to-End)<br>
+        </div>
+    </div>
+
+    <!-- Module 16 -->
+    <div class="accordion border rounded-lg">
+        <button class="accordion-header w-full flex justify-between items-center p-3 font-semibold text-primary">
+            Module 16: Career & Placement Preparation
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content hidden px-4 pb-3 text-sm text-text-secondary">
+            Resume & LinkedIn Optimization<br>
+            GitHub Portfolio Building<br>
+            Coding Interview Preparation<br>
+            JavaScript & React Interview Questions<br>
+            System Design Basics<br>
+            Mock Interviews<br>
+            Freelancing & Client Projects<br>
+            Industry Best Practices<br>
+        </div>
+    </div>
+
+</div>
+
                 </section>
 
                 <!-- Recent Activity Section -->
@@ -267,43 +498,32 @@ State management, hooks & component-based architecture</p>
                         </button>
                     </div>
 
-                    <div class="space-y-4">
-                        <!-- Event 1 -->
-                        <div class="flex items-start space-x-3 p-3 bg-primary-50 rounded-lg">
-                            <div class="text-center flex-shrink-0">
-                                <p class="text-xs text-primary font-medium">DEC</p>
-                                <p class="text-2xl font-bold text-primary">6</p>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <p class="font-semibold text-primary text-sm mb-1">Live Q&A Session</p>
-                                <p class="text-xs text-text-secondary mb-1">React Advanced Patterns</p>
-                                <div class="flex items-center space-x-2 text-xs text-text-secondary">
-                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
-                                    <span>3:00 PM - 4:00 PM</span>
-                                </div>
-                            </div>
-                        </div>
+           <div class="space-y-4">
+    <div class="flex items-start space-x-3 p-3 bg-primary-50 rounded-lg">
+        <div class="text-center flex-shrink-0">
+            <p id="eventMonth" class="text-xs text-primary font-medium">---</p>
+            <p id="eventDay" class="text-2xl font-bold text-primary">--</p>
+        </div>
+        <div class="flex-1 min-w-0">
+             <a href="https://forms.gle/Bnp6KMKtFApNotf19" 
+           target="_blank" 
+           rel="noopener noreferrer">
+            <p class="font-semibold text-primary text-sm mb-1">Free Demo Session</p>
+            <p class="text-xs text-text-secondary mb-1">
+                Introduction to Web Technology Using MERN Stack
+            </p>
+            <div class="flex items-center space-x-2 text-xs text-text-secondary">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span>6:00 PM - 7:00 PM</span>
+            </div>
+            </a>
+        </div>
+    </div>
+</div>
 
-                        <!-- Event 2 -->
-                        <div class="flex items-start space-x-3 p-3 bg-surface rounded-lg">
-                            <div class="text-center flex-shrink-0">
-                                <p class="text-xs text-text-secondary font-medium">DEC</p>
-                                <p class="text-2xl font-bold text-text-primary">8</p>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <p class="font-semibold text-primary text-sm mb-1">Study Group Meeting</p>
-                                <p class="text-xs text-text-secondary mb-1">Data Science Cohort</p>
-                                <div class="flex items-center space-x-2 text-xs text-text-secondary">
-                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
-                                    <span>6:00 PM - 7:30 PM</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <button class="w-full mt-4 text-center text-sm text-secondary hover:text-secondary-700 font-medium">
                         View Full Calendar →
@@ -361,20 +581,27 @@ State management, hooks & component-based architecture</p>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 mt-20">
+    <footer class="bg-gray-900 text-gray-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
                 <!-- Company Info -->
                 <div>
-                    <div class="flex items-center space-x-3 mb-4">
+                    <!-- <div class="flex items-center space-x-3 mb-4">
                         <svg class="w-8 h-8" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="40" height="40" rx="8" fill="#1E3A8A"/>
                             <path d="M12 28V12L20 16L28 12V28L20 24L12 28Z" fill="#14B8A6"/>
                             <circle cx="20" cy="20" r="3" fill="#F59E0B"/>
                         </svg>
                         <span class="text-xl font-bold text-white">EduTech Pro</span>
-                    </div>
-                    <p class="text-sm mb-4">Transforming potential into expertise through hands-on learning and real-world projects.</p>
+                    </div> -->
+
+          <div class="flex items-center">
+    <a href="homepage.html" class="flex items-center">
+        <img src="infolift_logo_400.svg" alt="Infolift Logo" class="w-20 h-20 object-contain" />
+    </a>
+</div>
+                    
+                    <p class="text-sm mb-4">AN ISO 9001:2008 CERTIFIED ORGANIZATION</p>
                     <div class="flex space-x-4">
                         <a href="javascript:void(0)" class="hover:text-secondary transition-colors" aria-label="Facebook">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -404,7 +631,6 @@ State management, hooks & component-based architecture</p>
                     <h4 class="text-white font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
                         <li><a href="course_catalog.html" class="hover:text-secondary transition-colors">All Courses</a></li>
-                        <li><a href="learning_dashboard.html" class="hover:text-secondary transition-colors">Student Dashboard</a></li>
                         <li><a href="practice_labs.html" class="hover:text-secondary transition-colors">Practice Labs</a></li>
                         <li><a href="career_center.html" class="hover:text-secondary transition-colors">Career Services</a></li>
                         <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
@@ -415,11 +641,10 @@ State management, hooks & component-based architecture</p>
                 <div>
                     <h4 class="text-white font-semibold mb-4">Support</h4>
                     <ul class="space-y-2">
-                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors">Help Center</a></li>
                         <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors">Contact Us</a></li>
                         <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors">FAQs</a></li>
                         <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors">Community Forum</a></li>
-                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors">Technical Support</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors">Technical Support/Help Center</a></li>
                     </ul>
                 </div>
 
@@ -436,7 +661,7 @@ State management, hooks & component-based architecture</p>
 
             <!-- Bottom Bar -->
             <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-sm text-gray-400">© 2025 EduTech Pro. All Rights Reserved.</p>
+                <p class="text-sm text-gray-400">© 2025 Infolift Solution Pvt Ltd. All Rights Reserved.</p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
                     <a href="javascript:void(0)" class="text-sm hover:text-secondary transition-colors">Privacy Policy</a>
                     <a href="javascript:void(0)" class="text-sm hover:text-secondary transition-colors">Terms of Service</a>
@@ -463,6 +688,33 @@ State management, hooks & component-based architecture</p>
             }
         });
     </script>
+
+<script>
+document.querySelectorAll(".accordion-header").forEach(header => {
+    header.addEventListener("click", () => {
+        const content = header.nextElementSibling;
+        const icon = header.querySelector(".accordion-icon");
+
+        content.classList.toggle("hidden");
+        icon.textContent = content.classList.contains("hidden") ? "+" : "−";
+    });
+});
+</script>
+
+    <script>
+  const futureDate = new Date();
+  futureDate.setDate(futureDate.getDate() + 7);
+
+  const monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+                      "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+
+  document.getElementById("eventMonth").textContent =
+    monthNames[futureDate.getMonth()];
+
+  document.getElementById("eventDay").textContent =
+    futureDate.getDate();
+</script>
+
 <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
 </body>
 </html>
